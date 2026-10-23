@@ -214,10 +214,10 @@ def calm_page():
         for g, items in CALM_TEXTS)
     if EARLY_ACCESS_URL:
         early = (f'<p><a href="{html.escape(EARLY_ACCESS_URL, quote=True)}"><strong>Join early access</strong></a> '
-                 "(a short Google Form). It's free, there's no card, and you can leave anytime. I'll only email you about your invite. <a href="/privacy/">Privacy Policy</a></p>")
+                 "(a short Google Form). It's free, there's no card, and you can leave anytime. I'll only email you about your invite. <a href='/privacy/'>Privacy Policy</a></p>")
     else:
         early = (f'<p>Early-access sign-up opens soon. To be added now, email <a href="mailto:{EMAIL}?subject=Early%20access">{EMAIL}</a> '
-                 "with “early access” and whether you use iPhone or Android. I'll send your invite when it opens, and I'll only email you about your invite. <a href="/privacy/">Privacy Policy</a></p>")
+                 "with “early access” and whether you use iPhone or Android. I'll send your invite when it opens, and I'll only email you about your invite. <a href='/privacy/'>Privacy Policy</a></p>")
     return f"""<h1>12 calm texts for co-parents</h1>
 <p class="lede">Free, with no sign-up. Press and hold to select a text, then copy it and make it yours. “[Name]” is where your child's name goes.</p>
 <div class="doc">
