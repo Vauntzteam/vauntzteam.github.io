@@ -18,7 +18,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 
 ## 3. Who this policy covers
 
-- It covers the Evenstep app and our website.
+- It covers the Evenstep app, our website and our early-access list.
 - You must be 18 or older to use the app.
 - The app is for parents and guardians. It is not for children.
 - Parents may add information about their children (see sections 4 and 6), but we don't knowingly collect information from children. If you think a child has an account, tell us and we'll delete it.
@@ -42,6 +42,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. | You | Not shown |
 | Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
+| Early-access sign-ups | Email address, phone type (iPhone or Android), country, and any optional answers you give | You, through our sign-up form or by email | Not shown |
 
 Receipt photos may show names, addresses or the last digits of a card, so crop them if you wish.
 
@@ -66,6 +67,7 @@ The app reads your phone's language and time zone on the phone, only to show dat
 | Manage subscriptions | Contract |
 | Keep billing and tax records | Legal obligation |
 | Send notifications (you can turn them off) | Contract |
+| Send the early-access invite you asked for, including through Apple's or Google's test lists | Steps you asked us to take before a contract |
 | Keep the service and our website secure and prevent misuse | Our legitimate interest in protecting the service and your data |
 | Answer support and privacy requests | Contract and legal obligation |
 | Deal with legal claims and lawful requests | Legal obligation, or our legitimate interest in defending legal claims |
@@ -106,7 +108,9 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Expo | Relays push notifications | United States |
 | Google (Firebase Cloud Messaging) and Apple (Push Notification service) | Deliver notifications to phones | United States |
 | RevenueCat | Tracks subscription status | United States |
-| Google (Gmail) | Our support inbox | United States |
+| Google (Gmail) | Our support inbox, and sends early-access invites | United States |
+| Google (Forms and Sheets) | Holds early-access sign-ups | United States |
+| Apple (TestFlight) and Google (Play testing) | Receive testers' email addresses to send test invites | United States |
 | GitHub (GitHub Pages) | Hosts our website and keeps visitors' IP addresses in its logs for security | United States |
 
 - **Apple and Google** handle purchases under their own terms and privacy policies.
@@ -134,6 +138,7 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Support emails | 24 months |
 | Billing records | As long as tax law requires (5 years) |
 | App security logs | 7 days |
+| Early-access sign-ups | Until you ask us to remove them, and no later than 6 months after the app launches |
 | Website visit logs | Kept by GitHub for security under its own privacy statement. We can't see or delete them. |
 
 We may keep data longer if the law requires it, or to deal with a legal claim. We'll stop as soon as that need ends.
@@ -167,6 +172,8 @@ You can:
 Sent messages can't be changed. To correct one, send a new message.
 
 **How:** email vauntz.team@gmail.com from your account email. We'll confirm it's you and reply within one month. Complex requests may take up to two more months, and we'll tell you if so.
+
+**Early-access list:** to leave it, reply to any of our emails or email us, and we'll delete your sign-up.
 
 **Shared records:** some data belongs to both parents. We may refuse to delete the other parent's copy where we need it to defend legal claims, or where deleting it would harm the other parent's rights. We'll explain why.
 

@@ -11,9 +11,12 @@ import markdown
 
 ROOT = Path(__file__).resolve().parent.parent          # src/
 OUT = ROOT.parent                                       # repo root (published)
-GENERATED = ["index.html", "404.html", "favicon.svg", "apple-touch-icon.png", ".nojekyll", "assets"]
+GENERATED = ["index.html", "404.html", "favicon.svg", "apple-touch-icon.png", ".nojekyll", "assets", "calm"]
 UPDATED = "22 October 2026"
 VERSION = "1.0 (pre-launch)"
+# Paste the Google Form link here once the founder has made it (Instagram playbook section 6).
+# While it's empty, the /calm/ page asks people to email instead, so nothing broken is ever shown.
+EARLY_ACCESS_URL = ""
 EMAIL = "vauntz.team@gmail.com"
 
 LOGO = ('<svg viewBox="14 14 36 36" aria-hidden="true"><circle class="lgn" cx="23.4" cy="23.4" r="7.2"/>'
@@ -25,8 +28,11 @@ LAUNCH = "the day Evenstep is first released (see the note below)"
 PAGES = {
     "privacy": dict(
         title="Privacy Policy", h1="Privacy Policy", toc=True, legal=True,
+        version="1.1 (pre-launch)", updated="23 October 2026",
+        history=[("1.1 (pre-launch)", "23 October 2026", "added the early-access list (sections 3, 4, 5, 9, 11 and 13)."),
+                 ("1.0 (pre-launch)", "22 October 2026", "first published.")],
         desc="How Evenstep, the co-parenting app, collects, uses and protects your data.",
-        notice="<strong>Evenstep hasn't launched yet.</strong> The parts of this policy about our website and emails to us apply now. "
+        notice="<strong>Evenstep hasn't launched yet.</strong> The parts of this policy about our website, our early-access list and emails to us apply now. "
                "The rest takes effect on the day the app is first released, including to testers, and we'll show that date here."),
     "terms": dict(
         title="Terms of Use", h1="Terms of Use", toc=True, legal=True,
@@ -127,14 +133,17 @@ def shell(page, title, desc, body, h1=None):
 def legal_page(key, cfg):
     src = (ROOT / "content" / f"{key}.md").read_text(encoding="utf-8")
     if cfg["legal"]:
-        src += CHANGES
+        if cfg.get("history"):  # a page with its own version history
+            src += "\n\n## Changes\n\n" + "".join(f"- **Version {v}, {d}:** {t}\n" for v, d, t in cfg["history"])
+        else:
+            src += CHANGES
     md = markdown.Markdown(extensions=["tables", "sane_lists", "toc"],
                            extension_configs={"toc": {"slugify": slug, "toc_depth": "2"}})
     h = md.convert(src)
     h = links(tables(h), key)
     parts = [f"<h1>{cfg['h1']}</h1>"]
     if cfg["legal"]:
-        parts.append(f'<p class="meta">Effective: {LAUNCH}<br>Last updated: {UPDATED}<br>Version {VERSION}</p>')
+        parts.append(f'<p class="meta">Effective: {LAUNCH}<br>Last updated: {cfg.get("updated", UPDATED)}<br>Version {cfg.get("version", VERSION)}</p>')
     if cfg.get("notice"):  # remove a page's notice at the first tester release
         parts.append(f'<div class="notice" role="note"><p>{cfg["notice"]}</p></div>')
     if cfg["toc"]:
@@ -172,9 +181,53 @@ HOME = f"""<section class="hero">
 <li><strong>To-dos and private notes.</strong> Share what needs doing, and keep private notes your co-parent never sees.</li>
 </ul>
 <p>One Evenstep Plus subscription covers both parents, with a 7-day free trial.</p>
+<p><strong>Free for co-parents now:</strong> <a href="/calm/">12 calm texts to copy-paste</a>, plus early access.</p>
 <h2>Questions</h2>
 <p>Read our <a href="/support/">support page</a>, or email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 </div>"""
+
+# The free pack that the Instagram CALM DM and the bio link point to. Keep these 12 texts in sync with
+# marketing/kit/calmtexts.json in the claude.ai project (they must never repeat a post's slide-9 scripts).
+CALM_TEXTS = [
+    ("Plans and pickups", [
+        ("Swap", "Could we swap Fri and Sun? No pressure."),
+        ("Running late", "Running 15 minutes late, sorry. On my way."),
+        ("Confirming", "Confirming: kids with me Thu 5pm to Sun 6pm."),
+        ("Holidays", "Can we lock in holiday plans this month?")]),
+    ("Money and check-ins", [
+        ("New cost", "Soccer signup is $80. Split as usual?"),
+        ("Paying back", "Sent my half for the dentist. Thanks for booking."),
+        ("Gifts", "Want to set a budget for birthday gifts?"),
+        ("Health", "[Name] had a mild cough. Medicine last given 6pm.")]),
+    ("Keeping it calm", [
+        ("School", "Parent-teacher night is Thu 6pm. Together or separately?"),
+        ("Thanks", "Thanks for sorting the school form. Appreciated."),
+        ("Pause", "I want to reply properly. Can I answer tonight?"),
+        ("Got it", "Got it, thanks.")]),
+]
+
+
+def calm_page():
+    groups = "".join(
+        f"<h2>{html.escape(g)}</h2><ul>" +
+        "".join(f"<li><strong>{html.escape(t)}:</strong> “{html.escape(x)}”</li>" for t, x in items) + "</ul>"
+        for g, items in CALM_TEXTS)
+    if EARLY_ACCESS_URL:
+        early = (f'<p><a href="{html.escape(EARLY_ACCESS_URL, quote=True)}"><strong>Join early access</strong></a> '
+                 "(a short Google Form). It's free, there's no card, and you can leave anytime.</p>")
+    else:
+        early = (f'<p>Early-access sign-up opens soon. To be added now, email <a href="mailto:{EMAIL}?subject=Early%20access">{EMAIL}</a> '
+                 "with “early access” and whether you use iPhone or Android. I'll send your invite when it opens.</p>")
+    return f"""<h1>12 calm texts for co-parents</h1>
+<p class="lede">Free, with no sign-up. Press and hold to select a text, then copy it and make it yours. “[Name]” is where your child's name goes.</p>
+<div class="doc">
+{groups}
+<h2>Want all this in one place?</h2>
+<p>I'm building Evenstep on my own: one shared custody calendar, expenses you both approve, and messages you can rely on. It's early, and early testers help shape it.</p>
+{early}
+<p class="meta">Made for cooperative co-parenting, and not legal advice. If you don't feel safe with the other parent, please contact local support. In danger? Call 911 or your local emergency number.</p>
+</div>"""
+
 
 NOTFOUND = """<h1>This page doesn't exist.</h1>
 <div class="doc"><p>Check the address, or go to the <a href="/">Evenstep home page</a>. Our <a href="/support/">support page</a>, <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Use</a> are always there.</p></div>"""
@@ -213,13 +266,16 @@ def main():
     touch_icon(OUT / "apple-touch-icon.png")
     (OUT / "index.html").write_text(shell("home", "Evenstep", "Evenstep is a calm co-parenting app for separated parents: a shared custody calendar, expenses, messages and to-dos.", HOME))
     (OUT / "404.html").write_text(shell("404", "Page not found", "This page doesn't exist.", NOTFOUND))
+    (OUT / "calm").mkdir()
+    (OUT / "calm" / "index.html").write_text(shell("calm", "12 calm texts for co-parents", "Free: 12 short, friendly texts co-parents can copy for pickups, swaps, costs and check-ins.", calm_page()))
     for k, cfg in PAGES.items():
         (OUT / k).mkdir()
         (OUT / k / "index.html").write_text(legal_page(k, cfg))
     built = [p for n in GENERATED + list(PAGES) for p in ([OUT / n] if (OUT / n).is_file() else (OUT / n).rglob("*")) if p.is_file()]
-    left = [str(p.relative_to(OUT)) for p in built if p.suffix == ".html" if re.search(r"\[[^\]]*\]", re.sub(r"<[^>]+>", "", p.read_text()))]
+    left = [str(p.relative_to(OUT)) for p in built if p.suffix == ".html" if re.search(r"\[(?!Name\])[^\]]*\]", re.sub(r"<[^>]+>", "", p.read_text()))]  # "[Name]" on /calm/ is intentional
     print("built", sorted(str(p.relative_to(OUT)) for p in built))
     print("pages with [brackets] :", left or "none")
+    print("early-access link:", EARLY_ACCESS_URL or "not set yet (the /calm/ page asks people to email)")
 
 
 if __name__ == "__main__":
