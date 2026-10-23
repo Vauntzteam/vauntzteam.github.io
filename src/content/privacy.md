@@ -68,6 +68,7 @@ The app reads your phone's language and time zone on the phone, only to show dat
 | Keep billing and tax records | Legal obligation |
 | Send notifications (you can turn them off) | Contract |
 | Send the early-access invite you asked for, including through Apple's or Google's test lists | Steps you asked us to take before a contract |
+| Read any optional answers you give on the sign-up form, to help shape the app | Your consent |
 | Keep the service and our website secure and prevent misuse | Our legitimate interest in protecting the service and your data |
 | Answer support and privacy requests | Contract and legal obligation |
 | Deal with legal claims and lawful requests | Legal obligation, or our legitimate interest in defending legal claims |
@@ -99,7 +100,7 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 
 - **Your linked co-parent** sees everything shared, including when you viewed their messages and whether the family has Plus. They never see your private notes.
 - **Private notes** are stored on our servers in a space only your account can open in the app. They are not end-to-end encrypted. Our hosting provider stores them, and we access them only to run or repair the service. Like anything we hold, they could be disclosed if a court or other authority lawfully orders it.
-- **Service providers** process data for us only to run the app and our website. We only use providers that give your data the same or equal protection as this policy, and we use data processing terms where the provider offers them:
+- **Service providers** process data for us only to run the app, our website and our early-access list. We only use providers that give your data the same or equal protection as this policy, and we use data processing terms where the provider offers them:
 
 | Provider | What it does | Where |
 | --- | --- | --- |
@@ -138,7 +139,7 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Support emails | 24 months |
 | Billing records | As long as tax law requires (5 years) |
 | App security logs | 7 days |
-| Early-access sign-ups | Until you ask us to remove them, and no later than 6 months after the app launches |
+| Early-access sign-ups | Until you ask us to remove them, and no later than 6 months after the app is available to everyone in the App Store or Google Play |
 | Website visit logs | Kept by GitHub for security under its own privacy statement. We can't see or delete them. |
 
 We may keep data longer if the law requires it, or to deal with a legal claim. We'll stop as soon as that need ends.
@@ -173,7 +174,7 @@ Sent messages can't be changed. To correct one, send a new message.
 
 **How:** email vauntz.team@gmail.com from your account email. We'll confirm it's you and reply within one month. Complex requests may take up to two more months, and we'll tell you if so.
 
-**Early-access list:** to leave it, reply to any of our emails or email us, and we'll delete your sign-up.
+**Early-access list:** to leave it, reply to our invite email or email us, and we'll delete your sign-up.
 
 **Shared records:** some data belongs to both parents. We may refuse to delete the other parent's copy where we need it to defend legal claims, or where deleting it would harm the other parent's rights. We'll explain why.
 
