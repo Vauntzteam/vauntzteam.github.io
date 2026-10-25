@@ -16,7 +16,7 @@ UPDATED = "22 October 2026"
 VERSION = "1.0 (pre-launch)"
 # Paste the Google Form link here once the founder has made it (Instagram playbook section 6).
 # While it's empty, the /calm/ page asks people to email instead, so nothing broken is ever shown.
-EARLY_ACCESS_URL = ""
+EARLY_ACCESS_URL = "https://forms.gle/FTUVDpLibvoAQpgg6"
 EMAIL = "vauntz.team@gmail.com"
 
 LOGO = ('<svg viewBox="14 14 36 36" aria-hidden="true"><circle class="lgn" cx="23.4" cy="23.4" r="7.2"/>'
