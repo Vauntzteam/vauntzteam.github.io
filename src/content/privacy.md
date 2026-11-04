@@ -132,7 +132,9 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | --- | --- |
 | Your account | Until you delete it |
 | Private notes | Until you delete them or your account |
-| Shared records (messages with their sent and viewed times, calendar entries and requests, expenses with receipt photos, recurring expense rules, to-dos, the activity log and children's profiles) | While either parent's account is open. After you delete your account, they stay for the other parent, shown as from "Former member". We delete them 90 days after both accounts are closed. If no other parent is linked to your family, deleting your account deletes all the family's records within 30 days. |
+| Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) | While either parent's account is open. After you delete your account, they stay for the other parent, shown as from "Former member". We delete them 90 days after both accounts are closed. If no other parent is linked to your family, deleting your account deletes all the family's records within 30 days. |
+| Receipt photos | 3 months after they're added. If the expense is still waiting for a reply then, the photo stays until 2 weeks after the reply. The app shows the date under each photo, so you can save a copy to your phone first. |
+| Photos not saved with a record (for example, one added to an expense that wasn't saved) | Deleted after a day or two |
 | Unused invite codes | 30 days |
 | Server backups | Overwritten within 7 days |
 | Notification tokens | Until you sign out or delete your account |
@@ -154,7 +156,7 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
     - your notification tokens;
     - any unused invite codes.
 - **What we keep, and why:**
-    - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses with receipt photos, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days.
+    - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Receipt photos stay only until their 3 months end. Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days.
     - Billing records are kept for as long as tax law requires (5 years).
     - We also ask RevenueCat, which tracks subscription status for us, to delete your subscription record.
 - **Subscriptions:** deleting your account doesn't cancel a subscription. We can't cancel it for you, so cancel it in the App Store or Google Play first.
