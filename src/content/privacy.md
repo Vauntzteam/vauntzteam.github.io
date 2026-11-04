@@ -44,7 +44,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
 | Early-access sign-ups | Email address, phone type (iPhone or Android), country, and any optional answers you give | You, through our sign-up form or by email | Not shown |
 
-Receipt photos may show names, addresses or the last digits of a card, so crop them if you wish.
+Receipt photos may show names, addresses or the last digits of a card, so crop them if you wish. We delete them about 3 months after they're added (section 11).
 
 **We don't collect:** your location, your contacts, advertising IDs, payment card numbers, call audio or message attachments. The app contains no analytics or advertising tools, and we don't use crash reporting. Our website has no cookies, analytics or ads.
 
@@ -133,8 +133,8 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Your account | Until you delete it |
 | Private notes | Until you delete them or your account |
 | Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) | While either parent's account is open. After you delete your account, they stay for the other parent, shown as from "Former member". We delete them 90 days after both accounts are closed. If no other parent is linked to your family, deleting your account deletes all the family's records within 30 days. |
-| Receipt photos | 3 months after they're added. If the expense is still waiting for a reply then, the photo stays until 2 weeks after the reply. The app shows the date under each photo, so you can save a copy to your phone first. |
-| Photos not saved with a record (for example, one added to an expense that wasn't saved) | Deleted after a day or two |
+| Receipt photos | 3 months after they're added, or 2 weeks after the expense is approved or declined, whichever is later. While the expense is still waiting for a reply, the photo stays. A new photo that replaces a receipt starts a new 3 months. The app shows a "Kept until" date under each photo, so you can save a copy to your phone first. We delete the photo within a day after that date. The expense itself stays. |
+| Photos that aren't attached to anything (for example, one picked for an expense you didn't save) | Within 2 days |
 | Unused invite codes | 30 days |
 | Server backups | Overwritten within 7 days |
 | Notification tokens | Until you sign out or delete your account |
@@ -156,7 +156,7 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
     - your notification tokens;
     - any unused invite codes.
 - **What we keep, and why:**
-    - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Receipt photos stay only until their 3 months end. Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days.
+    - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days. Receipt photos are still deleted on their usual date (section 11).
     - Billing records are kept for as long as tax law requires (5 years).
     - We also ask RevenueCat, which tracks subscription status for us, to delete your subscription record.
 - **Subscriptions:** deleting your account doesn't cancel a subscription. We can't cancel it for you, so cancel it in the App Store or Google Play first.
