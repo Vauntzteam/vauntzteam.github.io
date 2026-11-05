@@ -40,6 +40,7 @@ No. Messages are permanent and time-stamped, so both parents can rely on them. T
 
 - **Expense reports:** Money > Report gives you an Excel or PDF file.
 - **Full backup:** Settings > Save a backup file saves everything shared. Private notes are left out.
+- **Receipt photos:** tap Save or share under the photo. We delete them about 3 months after they're added.
 
 ### Report a problem with your co-parent
 

@@ -28,8 +28,9 @@ LAUNCH = "the day Evenstep is first released (see the note below)"
 PAGES = {
     "privacy": dict(
         title="Privacy Policy", h1="Privacy Policy", toc=True, legal=True,
-        version="1.1 (pre-launch)", updated="23 October 2026",
-        history=[("1.1 (pre-launch)", "23 October 2026", "added the early-access list (sections 3, 4, 5, 9, 11 and 13)."),
+        version="1.2 (pre-launch)", updated="4 November 2026",
+        history=[("1.2 (pre-launch)", "4 November 2026", "receipt photos are deleted about 3 months after they're added, and photos not attached to anything within 2 days (sections 4, 11 and 12)."),
+                 ("1.1 (pre-launch)", "23 October 2026", "added the early-access list (sections 3, 4, 5, 9, 11 and 13)."),
                  ("1.0 (pre-launch)", "22 October 2026", "first published.")],
         desc="How Evenstep, the co-parenting app, collects, uses and protects your data.",
         notice="<strong>Evenstep hasn't launched yet.</strong> The parts of this policy about our website, our early-access list and emails to us apply now. "
