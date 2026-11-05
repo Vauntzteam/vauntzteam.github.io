@@ -44,7 +44,7 @@ No. Messages are permanent and time-stamped, so both parents can rely on them. T
 
 ### Report a problem with your co-parent
 
-Email us with the date and what happened. We can't take sides in disputes or give legal advice. If anyone is in danger, call your local emergency number.
+Press and hold one of their messages and tap Report: your email app opens with the message, ready to send to us. Or email us with the date and what happened. To stop seeing their new messages, block them in Settings; the calendar, expenses and to-dos stay shared. We can't take sides in disputes or give legal advice. If anyone is in danger, call your local emergency number.
 
 ### Legal or records requests
 

@@ -37,10 +37,10 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Family settings | Currency symbol | Either parent | Both parents |
 | To-dos and activity | To-dos and due dates; a log of recent changes (last 300) | Either parent | Both parents |
 | Private notes ("My notes") | Text, the date it's about, a child, when it was written and edited | You | Only you in the app (stored on our servers; see section 9) |
-| Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock. | You | Only you (your co-parent isn't told) |
+| Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock, and while you block, the app doesn't mark their messages as viewed. | You | Only you (your co-parent isn't told) |
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
 | Device | Notification token, device type, app version | Your phone | Not shown |
-| Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes the message's text, when it was sent and its ID. | You | Not shown |
+| Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes who sent the message, its text, when it was sent and its ID. | You | Not shown |
 | Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
 | Early-access sign-ups | Email address, phone type (iPhone or Android), country, and any optional answers you give | You, through our sign-up form or by email | Not shown |
