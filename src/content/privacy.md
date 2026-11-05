@@ -37,9 +37,10 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Family settings | Currency symbol | Either parent | Both parents |
 | To-dos and activity | To-dos and due dates; a log of recent changes (last 300) | Either parent | Both parents |
 | Private notes ("My notes") | Text, the date it's about, a child, when it was written and edited | You | Only you in the app (stored on our servers; see section 9) |
+| Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock. | You | Only you (your co-parent isn't told) |
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
 | Device | Notification token, device type, app version | Your phone | Not shown |
-| Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. | You | Not shown |
+| Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes the message's text, when it was sent and its ID. | You | Not shown |
 | Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
 | Early-access sign-ups | Email address, phone type (iPhone or Android), country, and any optional answers you give | You, through our sign-up form or by email | Not shown |
@@ -132,6 +133,7 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | --- | --- |
 | Your account | Until you delete it |
 | Private notes | Until you delete them or your account |
+| Blocks | Until you unblock, or delete your account |
 | Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) | While either parent's account is open. After you delete your account, they stay for the other parent, shown as from "Former member". We delete them 90 days after both accounts are closed. If no other parent is linked to your family, deleting your account deletes all the family's records within 30 days. |
 | Receipt photos | 3 months after they're added, or 2 weeks after the expense is approved or declined, whichever is later. While the expense is still waiting for a reply, the photo stays. A new photo that replaces a receipt starts a new 3 months. The app shows a "Kept until" date under each photo, so you can save a copy to your phone first. We delete the photo within a day after that date. The expense itself stays. |
 | Photos that aren't attached to anything (for example, one picked for an expense you didn't save) | Within 2 days |
