@@ -18,9 +18,12 @@ Open Evenstep > Settings > Account > **Delete account**, type DELETE and confirm
 ## What we delete
 
 - your account, email address and sign-in details;
-- your private notes;
+- your profile (your name and time zone);
+- your private notes and your blocks;
 - your notification tokens;
 - any unused invite codes.
+
+**Your open requests are withdrawn.** Swaps, holidays, schedule changes, expenses and recurring expenses still waiting for an answer are marked withdrawn, so the other parent isn't left waiting. They stay in the shared history like other records.
 
 ## What we keep, and why
 
