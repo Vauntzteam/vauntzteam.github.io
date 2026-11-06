@@ -24,6 +24,7 @@ Open Evenstep > Settings > Account > **Delete account**, type DELETE and confirm
 
 ## What we keep, and why
 
+- **Open requests are withdrawn.** Your requests still waiting for an answer (swaps, holidays, schedule changes, expenses and recurring expenses) are withdrawn, so the other parent isn't left waiting.
 - **Shared records stay for the other parent.** These are messages with their sent and viewed times, calendar entries and requests, expenses (each receipt photo is deleted about 3 months after it's added, on the date the app shows under it; see the Privacy Policy), recurring expense rules, to-dos, the activity log and children's profiles. They belong to the other parent's record too. Your name on them is replaced with "Former member". We delete them 90 days after both parents' accounts are closed. **If no other parent is linked to your family, deleting your account deletes all the family's records within 30 days.**
 - **Billing records** are kept for as long as tax law requires (5 years). Apple and Google keep their own purchase records.
 - **Legal holds:** we keep data longer only if the law requires it, for example a court order.

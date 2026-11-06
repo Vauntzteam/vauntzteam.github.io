@@ -39,7 +39,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Private notes ("My notes") | Text, the date it's about, a child, when it was written and edited | You | Only you in the app (stored on our servers; see section 9) |
 | Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock, and while you block, the app doesn't mark their messages as viewed. | You | Only you (your co-parent isn't told) |
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
-| Device | Notification token, device type, app version | Your phone | Not shown |
+| Device | Notification token, which alerts the phone gets (calendar, money, messages), device type, app version | Your phone | Not shown |
 | Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes who sent the message, its text, when it was sent and its ID. | You | Not shown |
 | Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
@@ -52,7 +52,7 @@ Receipt photos may show names, addresses or the last digits of a card, so crop t
 **Kept only on your phone (we never receive it):**
 
 - the co-parent name you type for display;
-- alert, theme, date-format and backup-reminder settings, and your last backup date;
+- theme, date-format and backup-reminder settings, and your last backup date;
 - backup and report files you save, unless you send them to us.
 
 The app reads your phone's language and time zone on the phone, only to show dates in your region's style.
@@ -109,6 +109,8 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Resend | Sends sign-in emails | United States |
 | Expo | Relays push notifications | United States |
 | Google (Firebase Cloud Messaging) and Apple (Push Notification service) | Deliver notifications to phones | United States |
+
+- **Notifications** say only who did what, for example "Sam added an expense." They never include a message's words, a private note, or the name or amount of a record. They go only to your co-parent's phones, and none are sent for messages from someone they blocked.
 | RevenueCat | Tracks subscription status | United States |
 | Google (Gmail) | Our support inbox, and sends early-access invites | United States |
 | Google (Forms and Sheets) | Holds early-access sign-ups | United States |
@@ -157,6 +159,7 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
     - your private notes;
     - your notification tokens;
     - any unused invite codes.
+- **Open requests:** your requests still waiting for an answer (swaps, holidays, schedule changes, expenses and recurring expenses) are withdrawn, so your co-parent isn't left waiting.
 - **What we keep, and why:**
     - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days. Receipt photos are still deleted on their usual date (section 11).
     - Billing records are kept for as long as tax law requires (5 years).
