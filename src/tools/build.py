@@ -29,7 +29,7 @@ PAGES = {
     "privacy": dict(
         title="Privacy Policy", h1="Privacy Policy", toc=True, legal=True,
         version="1.4 (pre-launch)", updated="6 November 2026",
-        history=[("1.4 (pre-launch)", "6 November 2026", "phone alerts: which alerts a phone gets is stored with its notification token, and what an alert says (sections 4 and 9); open requests are withdrawn when you delete your account (section 12)."),
+        history=[("1.4 (pre-launch)", "6 November 2026", "phone alerts: which alerts a phone gets is stored with its notification token, what an alert says and how long alert records are kept (sections 4, 9 and 11); your name and time zone are stored with your account (section 4); deleting your account also deletes your profile and blocks, and withdraws your open requests (section 12)."),
                  ("1.3 (pre-launch)", "6 November 2026", "added blocking a co-parent's messages, and what a message report includes (sections 4 and 11)."),
                  ("1.2 (pre-launch)", "4 November 2026", "receipt photos are deleted about 3 months after they're added, and photos not attached to anything within 2 days (sections 4, 11 and 12)."),
                  ("1.1 (pre-launch)", "23 October 2026", "added the early-access list (sections 3, 4, 5, 9, 11 and 13)."),

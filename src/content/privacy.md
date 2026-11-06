@@ -27,7 +27,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 
 | What | Examples | Comes from | Who can see it in the app |
 | --- | --- | --- | --- |
-| Account | Email address, sign-in details | You | You |
+| Account | Email address, sign-in details, the name your co-parent sees, your time zone | You | You; your co-parent sees your name |
 | Invite code | A one-time code or link that joins your two accounts | The parent who invites | Used to link accounts |
 | Children's profiles | First name and colour; optional birthday and photo | Either parent | Both parents |
 | Children's school notes (optional) | School and contact. Only add contact details you need for your child's care. | Either parent | Both parents |
@@ -39,7 +39,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Private notes ("My notes") | Text, the date it's about, a child, when it was written and edited | You | Only you in the app (stored on our servers; see section 9) |
 | Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock, and while you block, the app doesn't mark their messages as viewed. | You | Only you (your co-parent isn't told) |
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
-| Device | Notification token, which alerts the phone gets (calendar, money, messages), device type, app version | Your phone | Not shown |
+| Device | Notification token, which alerts the phone gets (Calendar, Money, Messages) and when they were last saved | Your phone | Only you (Settings > Alerts on this phone) |
 | Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes who sent the message, its text, when it was sent and its ID. | You | Not shown |
 | Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
@@ -51,11 +51,10 @@ Receipt photos may show names, addresses or the last digits of a card, so crop t
 
 **Kept only on your phone (we never receive it):**
 
-- the co-parent name you type for display;
 - theme, date-format and backup-reminder settings, and your last backup date;
 - backup and report files you save, unless you send them to us.
 
-The app reads your phone's language and time zone on the phone, only to show dates in your region's style.
+The app reads your phone's language on the phone, only to show dates in your region's style. It saves your time zone with your account, so "today" is right for both parents.
 
 ## 5. Why we use it and our legal bases
 
@@ -109,13 +108,13 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Resend | Sends sign-in emails | United States |
 | Expo | Relays push notifications | United States |
 | Google (Firebase Cloud Messaging) and Apple (Push Notification service) | Deliver notifications to phones | United States |
-
-- **Notifications** say only who did what, for example "Sam added an expense." They never include a message's words, a private note, or the name or amount of a record. They go only to your co-parent's phones, and none are sent for messages from someone they blocked.
 | RevenueCat | Tracks subscription status | United States |
 | Google (Gmail) | Our support inbox, and sends early-access invites | United States |
 | Google (Forms and Sheets) | Holds early-access sign-ups | United States |
 | Apple (TestFlight) and Google (Play testing) | Receive testers' email addresses to send test invites | United States |
 | GitHub (GitHub Pages) | Hosts our website and keeps visitors' IP addresses in its logs for security | United States |
+
+- **Alerts** (push notifications) pass through Expo, and Google or Apple, on their way to the phone. They say only who did what, for example "Sam added an expense." They never include a message's words, a private note, or a record's name or amount. Alerts about what you do go only to your co-parent's phones. If you block your co-parent, you get no alerts for their messages, and their other alerts say "Your co-parent" instead of their name.
 
 - **Apple and Google** handle purchases under their own terms and privacy policies.
 - **Legal requests:** we disclose data when the law requires it, or when we need it to make or defend a legal claim. We'll try to tell you first, unless the law forbids it.
@@ -141,7 +140,9 @@ The "Check tone" helper reads your draft on your phone only. Your text is never 
 | Photos that aren't attached to anything (for example, one picked for an expense you didn't save) | Within 2 days |
 | Unused invite codes | 30 days |
 | Server backups | Overwritten within 7 days |
-| Notification tokens | Until you sign out or delete your account |
+| Notification tokens and alert settings | Until you sign out on that phone (if it's offline then, as soon as it's back online) or delete your account. If you remove the app, we delete them soon after an alert can't reach that phone. |
+| Sent alerts (which phones an alert went to, and its words) | 1 hour |
+| Alert sending problems (an error code, never the words) | 30 days |
 | Support emails | 24 months |
 | Billing records | As long as tax law requires (5 years) |
 | App security logs | 7 days |
@@ -156,10 +157,11 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
 - **Without the app:** follow the steps on our [Delete your account](/delete-account/) page.
 - **What we delete:**
     - your account and sign-in details;
-    - your private notes;
+    - your profile (your name and time zone);
+    - your private notes and your blocks;
     - your notification tokens;
     - any unused invite codes.
-- **Open requests:** your requests still waiting for an answer (swaps, holidays, schedule changes, expenses and recurring expenses) are withdrawn, so your co-parent isn't left waiting.
+- **Open requests:** your requests still waiting for an answer (swaps, holidays, schedule changes, expenses and recurring expenses) are marked withdrawn, so your co-parent isn't left waiting. They stay in the shared history like other records.
 - **What we keep, and why:**
     - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days. Receipt photos are still deleted on their usual date (section 11).
     - Billing records are kept for as long as tax law requires (5 years).
