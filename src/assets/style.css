@@ -1,20 +1,11 @@
-/* Evenstep website. Colours match the app (light, and dark "palette C"). No web fonts: the phone's own rounded system font. */
+/* Evenstep website. Colours match the app's light mode (the site is light only: founder, 7 Nov 2026). No web fonts: the phone's own rounded system font. */
 :root{
   color-scheme:light;
   --bg:#fbeee6;--card:#fff8f2;--ink:#2b2c55;--mut:#5f6086;
   --line:rgba(43,44,85,.16);--line2:rgba(43,44,85,.38);
-  --coral:#ee8c7e;--navy:#2b2c55;--lgn:#2b2c55;
+  --coral:#ee8c7e;--navy:#2b2c55;
   --sky1:#cdc7e2;--sky2:#f7d3cb;--tree:#23244a;--wall:#fbe3c8;--win:#cdc7e2;
   --f:"Nunito",ui-rounded,"SF Pro Rounded","SF Pro Text",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root{
-    color-scheme:dark;
-    --bg:#0d0f24;--card:#1d2152;--ink:#fbeee6;--mut:#b4b6da;
-    --line:rgba(251,238,230,.18);--line2:rgba(251,238,230,.42);
-    --coral:#f09a8c;--navy:#4b50a6;--lgn:#9ea2e8;
-    --sky1:#363a82;--sky2:#6a4f86;--tree:#0f1129;--wall:#f2dcc6;--win:#363a82;
-  }
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -34,7 +25,6 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offse
 .nav a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:.95rem;text-decoration:none;color:var(--mut)}
 .nav a:hover,.nav a[aria-current=page]{color:var(--ink)}
 .nav a[aria-current=page]{text-decoration:underline;text-decoration-color:var(--coral);text-decoration-thickness:.14em;text-underline-offset:.35em}
-.lgn{fill:var(--lgn)}.lgc{fill:var(--coral)}
 
 /* page heading */
 main{padding-bottom:56px}
