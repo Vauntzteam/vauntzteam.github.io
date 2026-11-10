@@ -19,10 +19,28 @@ VERSION = "1.0 (pre-launch)"
 EARLY_ACCESS_URL = "https://forms.gle/FTUVDpLibvoAQpgg6"
 EMAIL = "vauntz.team@gmail.com"
 
-LOGO = ('<svg viewBox="14 14 36 36" aria-hidden="true"><circle class="lgn" cx="23.4" cy="23.4" r="7.2"/>'
-        '<rect class="lgc" x="33.7" y="17.1" width="13.2" height="13.2" rx="3.5"/>'
-        '<rect class="lgc" x="17.1" y="33.7" width="13.2" height="13.2" rx="3.5"/>'
-        '<circle class="lgn" cx="40.6" cy="40.6" r="7.2"/></svg>')
+# The "e" of the app icon (Evenstep repo, docs/icon-handoff/evenstep-e/mark-light.svg; founder,
+# 7 Nov 2026): navy on the left, coral on the right, each with a soft shade. One copy of its parts,
+# for the header logo and the favicon.
+E_DEFS = ('<clipPath id="ec"><circle cx="512" cy="512" r="330"/></clipPath>'
+          '<clipPath id="eL"><rect x="-300" y="-300" width="793.75" height="1624"/></clipPath>'
+          '<clipPath id="eR"><rect x="493.75" y="-300" width="830.25" height="1624"/></clipPath>'
+          '<linearGradient id="gl" gradientUnits="userSpaceOnUse" x1="0" y1="182" x2="0" y2="842">'
+          '<stop offset="0" stop-color="#45488c"/><stop offset=".55" stop-color="#2f315f"/><stop offset="1" stop-color="#242549"/></linearGradient>'
+          '<linearGradient id="gr" gradientUnits="userSpaceOnUse" x1="0" y1="182" x2="0" y2="842">'
+          '<stop offset="0" stop-color="#e9787a"/><stop offset=".55" stop-color="#df6670"/><stop offset="1" stop-color="#cf5664"/></linearGradient>')
+
+
+def e_half(clip, shade):
+    return (f'<g clip-path="url(#{clip})">'
+            f'<path d="M257 512A255 255 0 0 0 404.23 743.11A255 255 0 0 0 675.91 707.34" fill="none" stroke="url(#{shade})" stroke-width="150" stroke-linecap="round"/>'
+            f'<path d="M257 512A255 255 0 0 1 512 257A255 255 0 0 1 767 512" fill="none" stroke="url(#{shade})" stroke-width="150"/>'
+            f'<rect x="182" y="451" width="660" height="122" fill="url(#{shade})" clip-path="url(#ec)"/></g>')
+
+
+E_SHAPE = f'<g transform="translate(6.9 3.25)">{e_half("eL", "gl")}{e_half("eR", "gr")}</g>'
+LOGO = f'<svg viewBox="170 170 684 684" aria-hidden="true"><defs>{E_DEFS}</defs>{E_SHAPE}</svg>'
+
 
 LAUNCH = "the day Evenstep is first released (see the note below)"
 PAGES = {
@@ -104,9 +122,8 @@ def shell(page, title, desc, body, h1=None):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{full}</title>
 <meta name="description" content="{html.escape(desc, quote=True)}">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#fbeee6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0d0f24" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fbeee6">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -237,22 +254,15 @@ NOTFOUND = """<h1>This page doesn't exist.</h1>
 
 
 def favicon():
-    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#fbeee6"/>'
-            '<circle cx="23.4" cy="23.4" r="7.2" fill="#2b2c55"/><rect x="33.7" y="17.1" width="13.2" height="13.2" rx="3.5" fill="#ee8c7e"/>'
-            '<rect x="17.1" y="33.7" width="13.2" height="13.2" rx="3.5" fill="#ee8c7e"/><circle cx="40.6" cy="40.6" r="7.2" fill="#2b2c55"/></svg>')
+    """The app icon's look: the "e" on its peach tile, a little larger than on the phone so it reads in a browser tab."""
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="112 112 800 800">'
+            f'<defs>{E_DEFS}</defs><rect x="112" y="112" width="800" height="800" rx="176" fill="#f8d9c4"/>{E_SHAPE}</svg>')
 
 
 def touch_icon(path):
-    from PIL import Image, ImageDraw
-    n = 180 * 4
-    s = n / 64
-    im = Image.new("RGB", (n, n), "#fbeee6")
-    d = ImageDraw.Draw(im)
-    for cx, cy in ((23.4, 23.4), (40.6, 40.6)):
-        d.ellipse([(cx - 7.2) * s, (cy - 7.2) * s, (cx + 7.2) * s, (cy + 7.2) * s], fill="#2b2c55")
-    for x, y in ((33.7, 17.1), (17.1, 33.7)):
-        d.rounded_rectangle([x * s, y * s, (x + 13.2) * s, (y + 13.2) * s], radius=3.5 * s, fill="#ee8c7e")
-    im.resize((180, 180), Image.LANCZOS).save(path, optimize=True)
+    """The app's own iOS icon (Evenstep repo, assets/images/ios-icon.png, made by `npm run icons`), at 180 px."""
+    from PIL import Image
+    Image.open(ROOT / "assets" / "app-icon-1024.png").convert("RGB").resize((180, 180), Image.LANCZOS).save(path, optimize=True)
 
 
 def main():
