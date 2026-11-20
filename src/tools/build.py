@@ -46,8 +46,9 @@ LAUNCH = "the day Evenstep is first released (see the note below)"
 PAGES = {
     "privacy": dict(
         title="Privacy Policy", h1="Privacy Policy", toc=True, legal=True,
-        version="1.5 (pre-launch)", updated="20 November 2026",
-        history=[("1.5 (pre-launch)", "20 November 2026", "a message, expense or recurring expense you save when the app can't reach us is kept on your phone until it's sent (section 4)."),
+        version="1.6 (pre-launch)", updated="20 November 2026",
+        history=[("1.6 (pre-launch)", "20 November 2026", "message records: you can save your messages as a PDF on your phone; what one holds, and that a parent who blocked may include the messages their block hides (sections 4 and 16); the list of records you saved stays on your phone, and deleting your account in the app deletes it (sections 4 and 12); security logs show which requests were made (section 4); the app has no backup file, backup reminder or date-format setting, so that wording now names expense reports and message records and the Appearance setting (sections 4, 12 and 16)."),
+                 ("1.5 (pre-launch)", "20 November 2026", "a message, expense or recurring expense you save when the app can't reach us is kept on your phone until it's sent (section 4)."),
                  ("1.4 (pre-launch)", "6 November 2026", "phone alerts: which alerts a phone gets is stored with its notification token, what an alert says and how long alert records are kept (sections 4, 9 and 11); your name and time zone are stored with your account (section 4); deleting your account also deletes your profile and blocks, and withdraws your open requests (section 12)."),
                  ("1.3 (pre-launch)", "6 November 2026", "added blocking a co-parent's messages, and what a message report includes (sections 4 and 11)."),
                  ("1.2 (pre-launch)", "4 November 2026", "receipt photos are deleted about 3 months after they're added, and photos not attached to anything within 2 days (sections 4, 11 and 12)."),
