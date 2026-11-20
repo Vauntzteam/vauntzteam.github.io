@@ -54,6 +54,8 @@ Receipt photos may show names, addresses or the last digits of a card, so crop t
 - theme, date-format and backup-reminder settings, and your last backup date;
 - backup and report files you save, unless you send them to us.
 
+**Kept on your phone until it's sent:** a message, expense or recurring expense (with its receipt photo) that you save when the app can't reach us, for example without signal. The app sends it by itself once you're back online with the app open, then deletes the phone's copy. A message shows the time it reaches us. If you choose not to send it, or it can't be sent and you remove it, it's deleted from your phone. Signing out or deleting your account deletes it too.
+
 The app reads your phone's language on the phone, only to show dates in your region's style. It saves your time zone with your account, so "today" is right for both parents.
 
 ## 5. Why we use it and our legal bases
