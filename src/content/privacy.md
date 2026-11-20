@@ -41,7 +41,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
 | Device | Notification token, which alerts the phone gets (Calendar, Money, Messages) and when they were last saved | Your phone | Only you (Settings > Alerts on this phone) |
 | Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes who sent the message, its text, when it was sent and its ID. | You | Not shown |
-| Security logs | IP address, times, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
+| Security logs | IP address, times, which requests were made, errors, kept by Supabase, our app's hosting provider | Automatically | Not shown |
 | Website visits | IP address, browser type and the pages requested, kept in our website host's logs | Your browser | Not shown |
 | Early-access sign-ups | Email address, phone type (iPhone or Android), country, and any optional answers you give | You, through our sign-up form or by email | Not shown |
 
@@ -51,7 +51,7 @@ Receipt photos may show names, addresses or the last digits of a card, so crop t
 
 **Kept only on your phone (we never receive it):**
 
-- theme and date-format settings;
+- your Appearance setting (light, dark or the phone's);
 - report files you save (expense reports and message records), unless you send them to us;
 - a list of the message records you saved (the dates each one covers, how many messages it holds and when you saved it), shown in Settings. Signing out or deleting your account deletes the list.
 
@@ -163,7 +163,8 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
     - your profile (your name and time zone);
     - your private notes and your blocks;
     - your notification tokens;
-    - any unused invite codes.
+    - any unused invite codes;
+    - if you delete in the app, the list of message records you saved on that phone (the PDFs stay where you saved them).
 - **Open requests:** your requests still waiting for an answer (swaps, holidays, schedule changes, expenses and recurring expenses) are marked withdrawn, so your co-parent isn't left waiting. They stay in the shared history like other records.
 - **What we keep, and why:**
     - Shared records (messages with their sent and viewed times, calendar entries and requests, expenses, recurring expense rules, to-dos, the activity log and children's profiles) stay for the other parent (section 11). Your name on them is replaced with "Former member". If no other parent is linked, we delete them within 30 days. Receipt photos are still deleted on their usual date (section 11).
@@ -205,8 +206,8 @@ You need an email address to create an account. Everything else is optional, inc
 
 ## 16. Report files on your phone
 
-- **What's in them:** an expense report holds the expenses you chose. A message record holds your messages from the dates you chose: who sent each one, when it was sent and viewed, and lines recording decisions. Private notes, to-dos and messages not sent yet are never included.
-- **Made on your phone:** the app makes them from the records it already shows you. Your co-parent isn't told, and our servers don't store that you made one. Like every request, the app's requests appear for a short time in our security logs (section 11).
+- **What's in them:** an expense report holds the expenses you chose, with any receipt photos we still keep. A message record holds the messages between you and your co-parent from the dates you chose: who sent each one, when it was sent and viewed, its words, and lines recording expenses and decisions. At the top it names the children (first names), both parents, who made it and when, and your phone's time zone. If you blocked your co-parent, it says so. Private notes, to-dos and messages not sent yet are never included.
+- **Made on your phone:** the app makes them from what you can already see in the app, plus, only if you tick the box, the messages your block hides. Your co-parent isn't told, and we keep no list of the records you make. Our security logs keep the app's requests for 7 days, like any request, so they may show that messages were fetched (section 11).
 - **Where they go:** you choose where to save them, and we don't receive them.
 - **Keep them safe:** store them carefully, and only share them with people you trust.
 
