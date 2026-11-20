@@ -37,7 +37,7 @@ Evenstep isn't currently offered in the European Economic Area (the EU, Iceland,
 | Family settings | Currency symbol | Either parent | Both parents |
 | To-dos and activity | To-dos and due dates; a log of recent changes (last 300) | Either parent | Both parents |
 | Private notes ("My notes") | Text, the date it's about, a child, when it was written and edited | You | Only you in the app (stored on our servers; see section 9) |
-| Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock, and while you block, the app doesn't mark their messages as viewed. | You | Only you (your co-parent isn't told) |
+| Blocks | That you blocked your co-parent's messages, and when. Their new messages are kept but hidden from you until you unblock (or you choose to include them in a message record you save), and while you block, the app doesn't mark their messages as viewed. | You | Only you (your co-parent isn't told) |
 | Subscription | Plan, status, renewal dates, store transaction ID (never card numbers) | Apple or Google, through RevenueCat | Both parents see whether the family has Plus |
 | Device | Notification token, which alerts the phone gets (Calendar, Money, Messages) and when they were last saved | Your phone | Only you (Settings > Alerts on this phone) |
 | Support emails | What you send us. Bug-report drafts include the app version, screen, theme and mode. A message report includes who sent the message, its text, when it was sent and its ID. | You | Not shown |
@@ -51,8 +51,9 @@ Receipt photos may show names, addresses or the last digits of a card, so crop t
 
 **Kept only on your phone (we never receive it):**
 
-- theme, date-format and backup-reminder settings, and your last backup date;
-- backup and report files you save, unless you send them to us.
+- theme and date-format settings;
+- report files you save (expense reports and message records), unless you send them to us;
+- a list of the message records you saved (the dates each one covers, how many messages it holds and when you saved it), shown in Settings. Signing out or deleting your account deletes the list.
 
 **Kept on your phone until it's sent:** a message, expense or recurring expense (with its receipt photo) that you save when the app can't reach us, for example without signal. The app sends it by itself once you're back online with the app open, then deletes the phone's copy. A message shows the time it reaches us. If you choose not to send it, or it can't be sent and you remove it, it's deleted from your phone. Signing out or deleting your account deletes it too.
 
@@ -169,7 +170,7 @@ We may keep data longer if the law requires it, or to deal with a legal claim. W
     - Billing records are kept for as long as tax law requires (5 years).
     - We also ask RevenueCat, which tracks subscription status for us, to delete your subscription record.
 - **Subscriptions:** deleting your account doesn't cancel a subscription. We can't cancel it for you, so cancel it in the App Store or Google Play first.
-- **Export first:** save a backup or report before you delete.
+- **Export first:** save an expense report or a message record before you delete.
 
 ## 13. Your rights
 
@@ -202,9 +203,10 @@ You need an email address to create an account. Everything else is optional, inc
 - Our own access is limited to running and supporting the service.
 - If a breach happens, we tell the regulators and the people affected as the law requires. That includes parents where children's data is involved.
 
-## 16. Backup and report files on your phone
+## 16. Report files on your phone
 
-- **What's in them:** backup files contain your shared records. Private notes are never included.
+- **What's in them:** an expense report holds the expenses you chose. A message record holds your messages from the dates you chose: who sent each one, when it was sent and viewed, and lines recording decisions. Private notes, to-dos and messages not sent yet are never included.
+- **Made on your phone:** the app makes them from the records it already shows you. Your co-parent isn't told, and our servers don't store that you made one. Like every request, the app's requests appear for a short time in our security logs (section 11).
 - **Where they go:** you choose where to save them, and we don't receive them.
 - **Keep them safe:** store them carefully, and only share them with people you trust.
 

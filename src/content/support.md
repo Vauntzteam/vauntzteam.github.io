@@ -39,7 +39,7 @@ No. Messages are permanent and time-stamped, so both parents can rely on them. T
 ### How do I export my records?
 
 - **Expense reports:** Money > Report gives you an Excel or PDF file.
-- **Full backup:** Settings > Save a backup file saves everything shared. Private notes are left out.
+- **Message records:** Messages > Save a record (PDF) gives you a PDF of all your messages, or the dates you choose, with when each was sent and viewed. Your co-parent isn't told.
 - **Receipt photos:** tap Save or share under the photo. We delete them about 3 months after they're added.
 
 ### Report a problem with your co-parent

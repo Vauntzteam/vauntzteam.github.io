@@ -34,6 +34,6 @@ Open Evenstep > Settings > Account > **Delete account**, type DELETE and confirm
 - **Support emails** you sent us: 24 months. **Security logs** kept by Supabase, our app's hosting provider: 7 days.
 - We also ask RevenueCat, which tracks subscription status for us, to delete your subscription record.
 
-Before you delete, you may want to save a backup or an expense report in the app.
+Before you delete, you may want to save an expense report or a message record in the app.
 
 Questions: vauntz.team@gmail.com · [Privacy Policy](/privacy/) · [Support](/support/)
