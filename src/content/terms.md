@@ -28,7 +28,7 @@
     - Your subscription renews automatically at the end of each period unless you cancel.
     - On the App Store, cancel at least 24 hours before the period ends, or you'll be charged for the next one.
     - To avoid being charged after a free trial, cancel before the trial ends.
-- **One subscription covers both linked parents.** If it ends, both of you can still see everything (you can still view, export and back up). Adding and editing pause until one of you subscribes again.
+- **One subscription covers both linked parents.** If it ends, both of you can still see everything and save expense reports and message records. Adding and editing pause until one of you subscribes again.
 - **If the subscriber deletes their account,** the other parent keeps Plus until the end of the period already paid for. After that, Plus ends for both of you, even if the subscription keeps renewing in the store. We can't cancel it for you, so cancel in the App Store or Google Play first.
 - **Price changes:** Apple and Google tell you about price changes and ask for consent where the law requires it.
 
