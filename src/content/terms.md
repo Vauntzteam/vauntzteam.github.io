@@ -22,7 +22,7 @@
 ## 4. Evenstep Plus subscription and free trial
 
 - **Trial:** eligible new subscribers get a 7-day free trial. Apple or Google decides who is eligible (usually one trial per store account).
-- **Price:** after the trial, Plus costs the price shown in the App Store or Google Play when you buy. In the US this is currently US$3.99 a month or US$29.99 a year; prices vary by country.
+- **Price:** after the trial, Plus costs the price shown in the App Store or Google Play when you buy. In the US this is currently US$4.99 a month or US$38.99 a year; prices vary by country.
 - **Payment:** you pay through your Apple or Google account.
 - **Renewal:**
     - Your subscription renews automatically at the end of each period unless you cancel.

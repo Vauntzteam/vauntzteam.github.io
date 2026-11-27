@@ -59,8 +59,9 @@ PAGES = {
                "The rest takes effect on the day the app is first released, including to testers, and we'll show that date here."),
     "terms": dict(
         title="Terms of Use", h1="Terms of Use", toc=True, legal=True,
-        version="1.1 (pre-launch)", updated="21 November 2026",
-        history=[("1.1 (pre-launch)", "21 November 2026", "if a subscription ends, you can still see everything and save expense reports and message records; the app has no backup file (section 4)."),
+        version="1.2 (pre-launch)", updated="27 November 2026",
+        history=[("1.2 (pre-launch)", "27 November 2026", "the US price of Evenstep Plus is now US$4.99 a month or US$38.99 a year (section 4)."),
+                 ("1.1 (pre-launch)", "21 November 2026", "if a subscription ends, you can still see everything and save expense reports and message records; the app has no backup file (section 4)."),
                  ("1.0 (pre-launch)", "22 October 2026", "first published.")],
         desc="The terms for using Evenstep and the Evenstep Plus subscription.",
         notice="<strong>Evenstep hasn't launched yet.</strong> These Terms take effect on the day the app is first released, "
