@@ -14,7 +14,7 @@
 
 ## 2. The European Economic Area and the United Kingdom
 
-Evenstep isn't currently offered in the European Economic Area (the EU, Iceland, Liechtenstein and Norway) or the United Kingdom, so we haven't appointed representatives there. If we start offering it there, we'll name our representatives in this section first.
+Evenstep isn't currently offered to the public in the European Economic Area (the EU, Iceland, Liechtenstein and Norway) or the United Kingdom, so we haven't appointed representatives there. People there can join our closed tests as testers; this policy applies to their data in the same way, and they can delete their account at any time (section 12). If we start offering Evenstep to the public there, we'll name our representatives in this section first.
 
 ## 3. Who this policy covers
 
@@ -76,7 +76,7 @@ The app reads your phone's language on the phone, only to show dates in your reg
 | Answer support and privacy requests | Contract and legal obligation |
 | Deal with legal claims and lawful requests | Legal obligation, or our legitimate interest in defending legal claims |
 
-We list EU and UK legal bases because your data is stored in the EU, and so this policy is ready if we offer Evenstep there.
+We list EU and UK legal bases because your data is stored in the EU and people there can join our closed tests, and so this policy is ready if we offer Evenstep to the public there.
 
 **Singapore (PDPA):** we use your data only for these purposes, with your consent or as the law allows. You can withdraw consent at any time (section 13), but some features may then stop working.
 
