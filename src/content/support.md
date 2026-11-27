@@ -8,7 +8,7 @@ Please tell us your phone type, the app version (shown at the bottom of Settings
 
 ### What does Evenstep Plus cost?
 
-After a 7-day free trial, it costs the price shown in the App Store or Google Play. In the US that's currently US$3.99 a month or US$29.99 a year. One subscription covers both linked parents.
+After a 7-day free trial, it costs the price shown in the App Store or Google Play. In the US that's currently US$4.99 a month or US$38.99 a year. One subscription covers both linked parents.
 
 ### How do I cancel?
 
