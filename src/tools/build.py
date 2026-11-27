@@ -42,12 +42,13 @@ E_SHAPE = f'<g transform="translate(6.9 3.25)">{e_half("eL", "gl")}{e_half("eR",
 LOGO = f'<svg viewBox="170 170 684 684" aria-hidden="true"><defs>{E_DEFS}</defs>{E_SHAPE}</svg>'
 
 
-LAUNCH = "the day Evenstep is first released (see the note below)"
+LAUNCH = "27 November 2026"
 PAGES = {
     "privacy": dict(
         title="Privacy Policy", h1="Privacy Policy", toc=True, legal=True,
-        version="1.7 (pre-launch)", updated="27 November 2026",
-        history=[("1.7 (pre-launch)", "27 November 2026", "people in the European Economic Area and the United Kingdom can join our closed tests as testers, and this policy covers their data in the same way; Evenstep still isn't offered to the public there (sections 2 and 5)."),
+        version="1.8 (pre-launch)", updated="27 November 2026",
+        history=[("1.8 (pre-launch)", "27 November 2026", "this whole policy now applies, from 27 November 2026, including to testers (the effective date and the note at the top)."),
+                 ("1.7 (pre-launch)", "27 November 2026", "people in the European Economic Area and the United Kingdom can join our closed tests as testers, and this policy covers their data in the same way; Evenstep still isn't offered to the public there (sections 2 and 5)."),
                  ("1.6 (pre-launch)", "20 November 2026", "message records: you can save your messages as a PDF on your phone; what one holds, and that a parent who blocked may include the messages their block hides (sections 4 and 16); the list of records you saved stays on your phone, and deleting your account in the app deletes it (sections 4 and 12); security logs show which requests were made (section 4); the app has no backup file, backup reminder or date-format setting, so that wording now names expense reports and message records and the Appearance setting (sections 4, 12 and 16)."),
                  ("1.5 (pre-launch)", "20 November 2026", "a message, expense or recurring expense you save when the app can't reach us is kept on your phone until it's sent (section 4)."),
                  ("1.4 (pre-launch)", "6 November 2026", "phone alerts: which alerts a phone gets is stored with its notification token, what an alert says and how long alert records are kept (sections 4, 9 and 11); your name and time zone are stored with your account (section 4); deleting your account also deletes your profile and blocks, and withdraws your open requests (section 12)."),
@@ -56,25 +57,26 @@ PAGES = {
                  ("1.1 (pre-launch)", "23 October 2026", "added the early-access list (sections 3, 4, 5, 9, 11 and 13)."),
                  ("1.0 (pre-launch)", "22 October 2026", "first published.")],
         desc="How Evenstep, the co-parenting app, collects, uses and protects your data.",
-        notice="<strong>Evenstep hasn't launched yet.</strong> The parts of this policy about our website, our early-access list and emails to us apply now. "
-               "The rest takes effect on the day the app is first released, including to testers, and we'll show that date here."),
+        notice="<strong>Evenstep is in testing.</strong> It isn't in the App Store or Google Play for everyone yet. "
+               "This whole policy has applied since 27 November 2026, including to testers."),
     "terms": dict(
         title="Terms of Use", h1="Terms of Use", toc=True, legal=True,
-        version="1.2 (pre-launch)", updated="27 November 2026",
-        history=[("1.2 (pre-launch)", "27 November 2026", "the US price of Evenstep Plus is now US$4.99 a month or US$38.99 a year (section 4)."),
+        version="1.3 (pre-launch)", updated="27 November 2026",
+        history=[("1.3 (pre-launch)", "27 November 2026", "these Terms now apply, from 27 November 2026, including to testers (the effective date and the note at the top)."),
+                 ("1.2 (pre-launch)", "27 November 2026", "the US price of Evenstep Plus is now US$4.99 a month or US$38.99 a year (section 4)."),
                  ("1.1 (pre-launch)", "21 November 2026", "if a subscription ends, you can still see everything and save expense reports and message records; the app has no backup file (section 4)."),
                  ("1.0 (pre-launch)", "22 October 2026", "first published.")],
         desc="The terms for using Evenstep and the Evenstep Plus subscription.",
-        notice="<strong>Evenstep hasn't launched yet.</strong> These Terms take effect on the day the app is first released, "
-               "including to testers, and we'll show that date here. Until then, they explain the rules the app will have."),
+        notice="<strong>Evenstep is in testing.</strong> It isn't in the App Store or Google Play for everyone yet. "
+               "These Terms have applied since 27 November 2026, including to testers."),
     "support": dict(
         title="Support", h1="Support", toc=False, legal=False,
         desc="Get help with Evenstep: subscriptions, refunds, records and your account.",
-        notice="<strong>Evenstep isn't in the App Store or Google Play yet.</strong> You can still email us with any question."),
+        notice="<strong>Evenstep is in testing and isn't in the App Store or Google Play for everyone yet.</strong> You can still email us with any question."),
     "delete-account": dict(
         title="Delete your account", h1="Delete your Evenstep account", toc=False, legal=False,
         desc="How to delete your Evenstep account, with or without the app, and what is deleted or kept.",
-        notice="<strong>Evenstep hasn't launched yet, so there are no accounts to delete.</strong> This page explains how deletion will work."),
+        notice="<strong>Evenstep is in testing.</strong> Testers can delete their accounts as this page explains."),
 }
 NAV = [("support", "Support"), ("privacy", "Privacy"), ("terms", "Terms")]
 FOOT = [("support", "Support"), ("privacy", "Privacy Policy"), ("terms", "Terms of Use"), ("delete-account", "Delete your account")]
@@ -171,7 +173,7 @@ def legal_page(key, cfg):
     parts = [f"<h1>{cfg['h1']}</h1>"]
     if cfg["legal"]:
         parts.append(f'<p class="meta">Effective: {LAUNCH}<br>Last updated: {cfg.get("updated", UPDATED)}<br>Version {cfg.get("version", VERSION)}</p>')
-    if cfg.get("notice"):  # remove a page's notice at the first tester release
+    if cfg.get("notice"):  # "in testing" notes since 27 Nov 2026; update or remove them at the public launch
         parts.append(f'<div class="notice" role="note"><p>{cfg["notice"]}</p></div>')
     if cfg["toc"]:
         items = "".join(f'<li><a href="#{t["id"]}">{html.escape(t["name"])}</a></li>' for t in md.toc_tokens)
